@@ -16,7 +16,7 @@ video_sampler = VideoSampler("test_files/example_video.mp4")
 video_sampler.sample_fixed_n(n_frames=6, t_start=0, t_end=6)  # Sample fixed amount of 
 
 ## Use the Tiler class to create a mosaic from the sampled frames
-tiler=Tiler(video_sampler.to_array(), from_folder=False)
+tiler=Tiler(video_sampler.to_array()) # expect list of arrays or folder (set from_folder=True)
 mosaic = tiler.create_mosaic(n_rows=2, border_size=3, annotation_style='number', annotation_position='topleft')
 tiler.save_mosaic_to_image(mosaic, "test_files/mosaic.jpg")
 ```
