@@ -1,8 +1,10 @@
+![alt text](test_files/mosaic.jpg "Mosaic")
+
 # videoframer
 
-`videoframer` is a Python module for extracting frames from video files and creating image mosaics like these:
+`videoframer` is a Python module for extracting video frames and creating image mosaics like the image above.
 
-![alt text](test_files/mosaic.jpg "Mosaic")
+One of its application areas are LLMS with vision abilities. A single prompt with consecutive images can give temporal information to an LLM.
 
 ## Usage example
 
