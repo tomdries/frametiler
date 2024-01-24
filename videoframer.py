@@ -149,7 +149,7 @@ class Tiler:
                             (text_x, text_y),
                             cv2.FONT_HERSHEY_SIMPLEX,
                             font_scale, text_color,
-                            4,
+                            10,
                             cv2.LINE_AA)
         return mosaic
 
