@@ -4,7 +4,7 @@
 
 `videoframer` is a Python module for extracting video frames and creating image mosaics like the image above.
 
-One of its application areas are LLMS with vision abilities. A single prompt with consecutive images can give temporal information to an LLM.
+One of its application areas are LLMS with vision abilities. A single prompt with consecutive images can give temporal information to an LLM. For example, GPT-4V describes the above sequence as: `The video show a progression of scenes over a city during twilight, possibly depicting a time-lapse.`
 
 ## Usage example
 
