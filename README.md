@@ -1,8 +1,8 @@
 ![alt text](test_files/mosaic.jpg "Mosaic")
 
-# videoframer
+# frametiler
 
-`videoframer` is a Python module for extracting video frames and creating image mosaics like the image above.
+`frametiler` is a Python module for extracting video frames and creating image mosaics like the image above.
 
 One of its application areas are LLMS with vision abilities. A single prompt with consecutive images can give temporal information to an LLM. For example, GPT-4V describes the above sequence as: `The video show a progression of scenes over a city during twilight, possibly depicting a time-lapse.`
 
@@ -11,7 +11,7 @@ One of its application areas are LLMS with vision abilities. A single prompt wit
 The above image was created as follows:
 
 ```python
-from videoframer import VideoSampler, Tiler
+from frametiler import VideoSampler, Tiler
 
 ## Use the VideoSampler class to sample frames from a video
 video_sampler = VideoSampler("test_files/example_video.mp4")
@@ -36,7 +36,7 @@ mosaic = tiler.resize_mosaic(mosaic, 800, 600)
 ## Installation
 To install, clone this repository and install opencv and numpy.
    ```bash
-   git clone https://github.com/tomdries/videoframer.git
+   git clone https://github.com/tomdries/frametiler.git
    pip install -r requirements.txt
    ```
 
